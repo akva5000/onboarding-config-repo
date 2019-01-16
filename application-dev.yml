@@ -1,0 +1,21 @@
+# Generic configuration to be applied to all services
+#Metrics related configurations
+management:
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+security:
+  oauth2:
+    resource:
+      jwt:
+        keyValue: "AmPkxJZf=YH%uVprWueg23s^&4w5r_5H5_$RCznr"

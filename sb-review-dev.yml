@@ -1,0 +1,15 @@
+#H2 configuration
+spring:
+  h2:
+    console:
+      enabled: true
+  cloud:
+    refresh:
+      enabled: false
+#External Services configuration
+external:
+  product:
+    url: http://localhost:8001/products
+oauth2:
+  security:
+    enabled: false
